@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function TextArea(props) {
+  function copy() {}
   return (
     <div className="container my-5">
       <section className="container-fluid">
@@ -18,12 +19,7 @@ export default function TextArea(props) {
           </div>
 
           <div className="col-md-6 my-3">
-            <h1>
-              {props.preview}
-              <button className="btn">
-                <span className="material-symbols-outlined">copy_all</span>
-              </button>
-            </h1>
+            <h1>{props.preview}</h1>
             <div className="input-group shadow-sm">
               <textarea
                 className="form-control"
@@ -31,6 +27,18 @@ export default function TextArea(props) {
                 rows={8}
                 style={{ resize: "none" }}
               ></textarea>
+            </div>
+            <div className="my-2">
+              <p>
+                Copy to Clipboard!
+                <button
+                  className="btn"
+                  style={{ boxShadow: "none" }}
+                  onClick={copy()}
+                >
+                  <span className="material-symbols-outlined">copy_all</span>
+                </button>
+              </p>
             </div>
           </div>
         </div>
