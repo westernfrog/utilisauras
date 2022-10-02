@@ -23,6 +23,7 @@ export default function TextArea(props) {
                 value={text}
               ></textarea>
             </div>
+            <p className="my-3">{text.length} characters</p>
           </div>
 
           <div className="col-md-6 my-3">
