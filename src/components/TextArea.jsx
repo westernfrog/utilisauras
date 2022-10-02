@@ -12,7 +12,7 @@ export default function TextArea(props) {
       <section className="container-fluid">
         <div className="row">
           <div className="col-md-6 my-3">
-            <h1>{props.title} - Bold text</h1>
+            <h1>{props.title}</h1>
             <div className="input-group shadow-sm">
               <textarea
                 className="form-control"
@@ -32,20 +32,20 @@ export default function TextArea(props) {
                 className="form-control"
                 aria-label="With textarea"
                 rows={8}
-                style={{ resize: "none", height: "13em" }}
+                style={{ height: "13em" }}
               >
                 <p>
                   <b>{text}</b>
                 </p>
+                <p>
+                  <i>{text}</i>
+                </p>
+                <p>
+                  <i>
+                    <b>{text}</b>
+                  </i>
+                </p>
               </div>
-            </div>
-            <div>
-              <p>
-                Copy to Clipboard!
-                <button className="btn" style={{ boxShadow: "none" }}>
-                  <span className="material-symbols-outlined">copy_all</span>
-                </button>
-              </p>
             </div>
           </div>
         </div>
