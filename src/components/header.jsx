@@ -12,7 +12,7 @@ export default function Header() {
             className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
+            data-bs-target="/navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup"
             aria-expanded="false"
             aria-label="Toggle navigation"
@@ -23,19 +23,19 @@ export default function Header() {
             <div className="navbar-nav">
               <ul className="navbar-nav  mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#">
+                  <a className="nav-link active" aria-current="page" href="/">
                     Home
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <a className="nav-link" href="/">
                     About
                   </a>
                 </li>
                 <li className="nav-item dropdown">
                   <a
                     className="nav-link dropdown-toggle"
-                    href="#"
+                    href="/"
                     id="navbarDarkDropdownMenuLink"
                     role="button"
                     data-bs-toggle="dropdown"
@@ -45,7 +45,7 @@ export default function Header() {
                   </a>
                   <ul className="dropdown-menu dropdown-menu-dark ">
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="/">
                         JSON Formatters
                       </a>
                     </li>
@@ -54,7 +54,7 @@ export default function Header() {
                     </li>
 
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="/">
                         Time Conversions
                       </a>
                     </li>
@@ -62,7 +62,7 @@ export default function Header() {
                       <hr className="dropdown-divider" />
                     </li>
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="/">
                         Online Text tools
                       </a>
                     </li>
@@ -71,7 +71,7 @@ export default function Header() {
                     </li>
 
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="/">
                         Online Hex and Binary tools
                       </a>
                     </li>
