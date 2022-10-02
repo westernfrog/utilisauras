@@ -17,7 +17,7 @@ export default function TextArea(props) {
               <textarea
                 className="form-control"
                 aria-label="With textarea"
-                rows={8}
+                rows={10}
                 style={{ resize: "none" }}
                 onChange={handleOnChange}
                 value={text}
@@ -32,19 +32,14 @@ export default function TextArea(props) {
                 className="form-control"
                 aria-label="With textarea"
                 rows={8}
-                style={{ height: "13em" }}
+                style={{ height: "16em", overflow: "auto" }}
               >
-                <p>
-                  <b>{text}</b>
-                </p>
-                <p>
-                  <i>{text}</i>
-                </p>
-                <p>
-                  <i>
-                    <b>{text}</b>
-                  </i>
-                </p>
+                <p className="fw-bold">{text}</p>
+                <p className="fw-light">{text}</p>
+                <p className="fst-italic">{text}</p>
+                <p className="text-muted">{text}</p>
+                <p className="text-decoration-underline">{text}</p>
+                <p className="text-decoration-line-through">{text}</p>
               </div>
             </div>
           </div>
