@@ -82,7 +82,7 @@ export default function Header() {
                     <li>
                       <a className="dropdown-item disabled" href="/l">
                         <h5>
-                          <span class="badge bg-secondary">
+                          <span className="badge bg-secondary">
                             More content coming soon!
                           </span>
                         </h5>

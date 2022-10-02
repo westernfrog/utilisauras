@@ -1,41 +1,48 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function TextArea(props) {
-  function copy() {}
+  const [text, settext] = useState("");
+
+  const handleOnChange = (event) => {
+    settext(event.target.value);
+  };
+
   return (
     <div className="container my-5">
       <section className="container-fluid">
         <div className="row">
           <div className="col-md-6 my-3">
-            <h1>{props.title}</h1>
+            <h1>{props.title} - Bold text</h1>
             <div className="input-group shadow-sm">
               <textarea
                 className="form-control"
                 aria-label="With textarea"
                 rows={8}
                 style={{ resize: "none" }}
+                onChange={handleOnChange}
+                value={text}
               ></textarea>
             </div>
           </div>
 
           <div className="col-md-6 my-3">
             <h1>{props.preview}</h1>
-            <div className="input-group shadow-sm">
-              <textarea
+            <div className="shadow-sm">
+              <div
                 className="form-control"
                 aria-label="With textarea"
                 rows={8}
-                style={{ resize: "none" }}
-              ></textarea>
+                style={{ resize: "none", height: "13em" }}
+              >
+                <p>
+                  <b>{text}</b>
+                </p>
+              </div>
             </div>
-            <div className="my-2">
+            <div>
               <p>
                 Copy to Clipboard!
-                <button
-                  className="btn"
-                  style={{ boxShadow: "none" }}
-                  onClick={copy()}
-                >
+                <button className="btn" style={{ boxShadow: "none" }}>
                   <span className="material-symbols-outlined">copy_all</span>
                 </button>
               </p>
