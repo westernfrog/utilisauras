@@ -25,7 +25,7 @@ export default function Header() {
       </nav>
       <div className="bg-light shadow-sm">
         <nav class="navbar navbar-expand-lg navbar-light container">
-          <div class="container-fluid">
+          <div class="container-fluid pe-0">
             <span class="navbar-brand">Utilities</span>
             <button
               class="navbar-toggler"
