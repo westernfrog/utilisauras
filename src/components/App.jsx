@@ -14,7 +14,7 @@ function App() {
           <Routes>
             <Route path="/time" element={<Time />} />
             <Route
-              path="/textu"
+              path="/textutility"
               element={<TextArea title="TextArea" preview="Preview" />}
             />
           </Routes>
