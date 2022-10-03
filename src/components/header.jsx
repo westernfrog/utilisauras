@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -34,29 +35,33 @@ export default function Header() {
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="true" href="/">
+                  <a
+                    class="nav-link active"
+                    aria-current="true"
+                    href="/text-utility"
+                  >
                     PDF TO WORD
                   </a>
                 </li>
                 <li class="nav-item ">
-                  <a class="nav-link" href="/">
+                  <Link class="nav-link" to="/word2pdf">
                     WORD TO PDF
-                  </a>
+                  </Link>
                 </li>
                 <li class="nav-item ">
-                  <a class="nav-link" href="/">
+                  <Link class="nav-link" to="/time">
                     TIME CONVERSIONS
-                  </a>
+                  </Link>
                 </li>
                 <li class="nav-item ">
-                  <a class="nav-link" href="/">
+                  <Link class="nav-link" to="/textutility">
                     TEXT UTILITY
-                  </a>
+                  </Link>
                 </li>
                 <li class="nav-item ">
-                  <a class="nav-link" href="/">
+                  <Link class="nav-link" to="/jsonf">
                     JSON FORMATTERS
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
