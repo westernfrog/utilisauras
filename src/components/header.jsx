@@ -1,7 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import $ from "jquery";
 
 export default function Header() {
+  function click() {
+    $("a.nav-link").click(function (e) {
+      e.preventDefault();
+      $("a.nav-link").addClass("active");
+    });
+  }
+
+  click();
+
   return (
     <div className="bg-dark">
       <nav class="navbar navbar-dark pt-3 rounded container">
@@ -35,15 +45,11 @@ export default function Header() {
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="true"
-                    href="/text-utility"
-                  >
+                  <a class="nav-link" aria-current="true" href="/text-utility">
                     PDF TO WORD
                   </a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item">
                   <Link class="nav-link" to="/word2pdf">
                     WORD TO PDF
                   </Link>
