@@ -68,7 +68,7 @@ export default function Footer() {
             <ul class="nav flex-column">
               <li class="nav-item mb-2">
                 <a href="/" class="nav-link p-0 fs-6">
-                  PDF to Word &rarr;
+                  PDF to Word
                 </a>
               </li>
               <li class="nav-item mb-2">
