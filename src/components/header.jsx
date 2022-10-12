@@ -13,14 +13,31 @@ export default function Header() {
   click();
 
   return (
-    <div className="bg-dark">
-      <nav class="navbar navbar-dark pt-3 rounded container">
+    <div className="bg-light">
+      <nav class="navbar navbar-light container">
         <div class="container-fluid">
-          <figure className="mb-0 pb-0 text-light">
-            <blockquote class="blockquote">
-              <h1>Online Utility</h1>
-            </blockquote>
-          </figure>
+          <span
+            class="navbar-brand mx-auto"
+            style={{ fontFamily: "'Abril Fatface', cursive" }}
+          >
+            <h1>
+              <img
+                className="me-3"
+                src="https://cdn-icons-png.flaticon.com/512/817/817776.png"
+                alt=""
+                width="45"
+                height="45"
+              />
+              Utilitisaurs
+              <img
+                className="ms-3"
+                src="https://cdn-icons-png.flaticon.com/512/817/817754.png"
+                alt=""
+                width="45"
+                height="45"
+              />
+            </h1>
+          </span>
         </div>
       </nav>
       <div className="bg-light shadow-sm">
