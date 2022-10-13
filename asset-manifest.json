@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/text-utility/static/js/main.d6fd067b.js",
-    "index.html": "/text-utility/index.html",
-    "main.d6fd067b.js.map": "/text-utility/static/js/main.d6fd067b.js.map"
+    "main.js": "/utilisauras/static/js/main.d6fd067b.js",
+    "index.html": "/utilisauras/index.html",
+    "main.d6fd067b.js.map": "/utilisauras/static/js/main.d6fd067b.js.map"
   },
   "entrypoints": [
     "static/js/main.d6fd067b.js"
