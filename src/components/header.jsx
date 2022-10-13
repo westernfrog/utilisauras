@@ -14,10 +14,10 @@ export default function Header() {
 
   return (
     <div className="bg-light">
-      <nav class="navbar navbar-light container">
-        <div class="container-fluid">
+      <nav className="navbar navbar-light container">
+        <div className="container-fluid">
           <span
-            class="navbar-brand mx-auto"
+            className="navbar-brand mx-auto"
             style={{ fontFamily: "'Abril Fatface', cursive" }}
           >
             <h1>
@@ -28,7 +28,7 @@ export default function Header() {
                 width="45"
                 height="45"
               />
-              Utilitisaurs
+              Utilisauras
               <img
                 className="ms-3"
                 src="https://cdn-icons-png.flaticon.com/512/817/817754.png"
@@ -41,11 +41,11 @@ export default function Header() {
         </div>
       </nav>
       <div className="bg-light shadow-sm">
-        <nav class="navbar navbar-expand-lg navbar-light container">
-          <div class="container-fluid pe-0">
-            <span class="navbar-brand">Utilities</span>
+        <nav className="navbar navbar-expand-lg navbar-light container">
+          <div className="container-fluid pe-0">
+            <span className="navbar-brand">Tools</span>
             <button
-              class="navbar-toggler"
+              className="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarNav"
@@ -57,32 +57,36 @@ export default function Header() {
                 border: "none",
               }}
             >
-              <span class="material-symbols-outlined">settings</span>
+              <span className="material-symbols-outlined">settings</span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="true" href="/text-utility">
+            <div className="collapse navbar-collapse" id="navbarNav">
+              <ul className="navbar-nav">
+                <li className="nav-item">
+                  <a
+                    className="nav-link"
+                    aria-current="true"
+                    href="/text-utility"
+                  >
                     PDF TO WORD
                   </a>
                 </li>
-                <li class="nav-item">
-                  <Link class="nav-link" to="/word2pdf">
+                <li className="nav-item">
+                  <Link className="nav-link" to="/word2pdf">
                     WORD TO PDF
                   </Link>
                 </li>
-                <li class="nav-item ">
-                  <Link class="nav-link" to="/time">
+                <li className="nav-item ">
+                  <Link className="nav-link" to="/time">
                     TIME CONVERSIONS
                   </Link>
                 </li>
-                <li class="nav-item ">
-                  <Link class="nav-link" to="/textutility">
+                <li className="nav-item ">
+                  <Link className="nav-link" to="/text">
                     TEXT UTILITY
                   </Link>
                 </li>
-                <li class="nav-item ">
-                  <Link class="nav-link" to="/jsonf">
+                <li className="nav-item ">
+                  <Link className="nav-link" to="/json">
                     JSON FORMATTERS
                   </Link>
                 </li>
