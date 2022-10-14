@@ -3,14 +3,13 @@ import { Link } from "react-router-dom";
 import $ from "jquery";
 
 export default function Header() {
-  function click() {
+  function clickon() {
     $("a.nav-link").click(function (e) {
       e.preventDefault();
       $("a.nav-link").addClass("active");
     });
   }
-
-  click();
+  clickon();
 
   return (
     <div className="bg-light">
@@ -42,8 +41,14 @@ export default function Header() {
       </nav>
       <div className="bg-light shadow-sm">
         <nav className="navbar navbar-expand-lg navbar-light container">
-          <div className="container-fluid pe-0">
-            <span className="navbar-brand">Tools</span>
+          <div className="container px-0">
+            <span
+              id="tools"
+              className="navbar-brand fw-bold d-lg-none"
+              style={{ fontFamily: "'Roboto Mono', sans-serif" }}
+            >
+              Tools
+            </span>
             <button
               className="navbar-toggler"
               type="button"
@@ -57,36 +62,41 @@ export default function Header() {
                 border: "none",
               }}
             >
-              <span className="material-symbols-outlined">settings</span>
+              <span className="material-symbols-outlined text-dark">
+                settings
+              </span>
             </button>
             <div className="collapse navbar-collapse" id="navbarNav">
-              <ul className="navbar-nav">
-                <li className="nav-item">
+              <ul
+                className="navbar-nav mx-auto"
+                style={{ fontFamily: "'Roboto', sans-serif" }}
+              >
+                <li id="pill" className="nav-item me-2 shadow-sm rounded-pill">
                   <a
                     className="nav-link"
                     aria-current="true"
-                    href="/text-utility"
+                    href="/utilisauras"
                   >
                     PDF TO WORD
                   </a>
                 </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to="/word2pdf">
+                <li id="pill" className="nav-item me-2 shadow-sm rounded-pill">
+                  <Link className="nav-link" to="/utilisauras/word2pdf">
                     WORD TO PDF
                   </Link>
                 </li>
-                <li className="nav-item ">
-                  <Link className="nav-link" to="/time">
+                <li id="pill" className="nav-item me-2 shadow-sm rounded-pill">
+                  <Link className="nav-link" to="/utilisauras/time">
                     TIME CONVERSIONS
                   </Link>
                 </li>
-                <li className="nav-item ">
-                  <Link className="nav-link" to="/text">
+                <li id="pill" className="nav-item me-2 shadow-sm rounded-pill">
+                  <Link className="nav-link" to="/utilisauras/text">
                     TEXT UTILITY
                   </Link>
                 </li>
-                <li className="nav-item ">
-                  <Link className="nav-link" to="/json">
+                <li id="pill" className="nav-item me-2 shadow-sm rounded-pill">
+                  <Link className="nav-link" to="/utilisauras/json">
                     JSON FORMATTERS
                   </Link>
                 </li>

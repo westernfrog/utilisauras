@@ -6,8 +6,8 @@ cdate = cdate.getFullYear();
 
 export default function Footer() {
   return (
-    <div className="bg-light">
-      <div className="container border-top">
+    <div className="bg-light border-top">
+      <div className="container">
         <footer className="row my-4">
           <div className="col-md-5">
             <p
@@ -59,45 +59,64 @@ export default function Footer() {
             </p>
           </div>
 
-          <div className="col-md-4 mt-auto"></div>
+          <div className="col-md-4 mt-3"></div>
 
-          <div className="col-md-3 mt-3">
+          <div className="col-md-2 mt-auto">
             <div className="col">
               <h5
-                className="mb-3"
-                style={{ fontFamily: "'Abril Fatface', cursive" }}
+                className="mb-2 fw-bold"
+                style={{ fontFamily: "'Roboto Mono', sans-serif" }}
               >
                 Tools
+                <img
+                  className="ms-3"
+                  src="https://cdn-icons-png.flaticon.com/512/817/817792.png"
+                  alt=""
+                  width="45"
+                  height="45"
+                />
               </h5>
               <ul
                 className="nav flex-column"
-                style={{ fontFamily: "'Roboto Slab', sans-serif" }}
+                style={{ fontFamily: "'Roboto', sans-serif" }}
               >
                 <li className="nav-item mb-2">
                   <a
-                    href="/text-utility"
+                    href="/utilisauras/"
                     className="nav-link p-0 fs-6 text-muted"
                   >
                     PDF to Word
                   </a>
                 </li>
                 <li className="nav-item mb-2">
-                  <Link to="/word2pdf" className="nav-link p-0 fs-6 text-muted">
+                  <Link
+                    to="/utilisauras/word2pdf"
+                    className="nav-link p-0 fs-6 text-muted"
+                  >
                     Word to PDF
                   </Link>
                 </li>
                 <li className="nav-item mb-2">
-                  <Link to="/time" className="nav-link p-0 fs-6 text-muted">
+                  <Link
+                    to="/utilisauras/time"
+                    className="nav-link p-0 fs-6 text-muted"
+                  >
                     Time Conversions
                   </Link>
                 </li>
                 <li className="nav-item mb-2">
-                  <Link to="/text" className="nav-link p-0 fs-6 text-muted">
+                  <Link
+                    to="/utilisauras/text"
+                    className="nav-link p-0 fs-6 text-muted"
+                  >
                     Text Utility
                   </Link>
                 </li>
                 <li className="nav-item mb-2">
-                  <Link to="/json" className="nav-link p-0 fs-6 text-muted">
+                  <Link
+                    to="/utilisauras/json"
+                    className="nav-link p-0 fs-6 text-muted"
+                  >
                     JSON Formatters
                   </Link>
                 </li>
@@ -115,8 +134,8 @@ export default function Footer() {
           <img
             src="https://cdn-icons-png.flaticon.com/512/817/817763.png"
             alt="Logo of Utilisauras"
-            width="50"
-            height="50"
+            width="45"
+            height="45"
           />
         </footer>
       </div>

@@ -12,9 +12,9 @@ function App() {
         <Router>
           <Header />
           <Routes>
-            <Route path="/time" element={<Time />} />
+            <Route path="/utilisauras/time" element={<Time />} />
             <Route
-              path="/text"
+              path="/utilisauras/text"
               element={<TextArea title="TextArea" preview="Preview" />}
             />
           </Routes>
