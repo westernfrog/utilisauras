@@ -15,10 +15,7 @@ export default function Header() {
     <div className="bg-light">
       <nav className="navbar navbar-light container">
         <div className="container-fluid">
-          <span
-            className="navbar-brand mx-auto"
-            style={{ fontFamily: "'Abril Fatface', cursive" }}
-          >
+          <span className="navbar-brand mx-auto text-abril">
             <h1>
               <img
                 className="me-3"
@@ -44,8 +41,7 @@ export default function Header() {
           <div className="container px-0">
             <span
               id="tools"
-              className="navbar-brand fw-bold d-lg-none"
-              style={{ fontFamily: "'Roboto Mono', sans-serif" }}
+              className="navbar-brand fw-bold d-lg-none text-mono"
             >
               Tools
             </span>
@@ -67,10 +63,7 @@ export default function Header() {
               </span>
             </button>
             <div className="collapse navbar-collapse" id="navbarNav">
-              <ul
-                className="navbar-nav mx-auto"
-                style={{ fontFamily: "'Roboto', sans-serif" }}
-              >
+              <ul className="navbar-nav mx-auto text-roboto">
                 <li id="pill" className="nav-item me-2 shadow-sm rounded-pill">
                   <a
                     className="nav-link"

@@ -10,25 +10,12 @@ export default function Footer() {
       <div className="container">
         <footer className="row my-4">
           <div className="col-md-5">
-            <p
-              className="fs-1 mb-2"
-              style={{ fontFamily: "'Abril Fatface', cursive" }}
-            >
-              Utilisauras
-            </p>
+            <p className="fs-1 mb-2 text-abril">Utilisauras</p>
 
-            <p
-              className="fs-3 mb-0"
-              style={{ fontFamily: "'Roboto Slab', sans-serif" }}
-            >
+            <p className="fs-3 mb-0 text-slab">
               <span className="fw-light">Utilisauras</span>
               <span className="fw-light"> is </span>
-              <span
-                className="fw-bold"
-                style={{ fontFamily: "'Dancing Script', cursive" }}
-              >
-                somewhat cute
-              </span>
+              <span className="fw-bold text-dancing">somewhat cute</span>
               <span className="fw-light"> as</span>
               <span className="fw-bold"> well </span>
               <span className="fw-light"> as </span>
@@ -42,12 +29,7 @@ export default function Footer() {
               <span className="fw-light"> problems.</span>
               <br />
               <span className="fw-bold">The </span>
-              <span
-                className="fw-bolder"
-                style={{ fontFamily: "'Dancing Script', cursive" }}
-              >
-                digital
-              </span>
+              <span className="fw-bolder text-dancing">digital</span>
               <span className="fw-bold"> way.</span>
               <img
                 className="ms-3"
@@ -63,23 +45,8 @@ export default function Footer() {
 
           <div className="col-md-2 mt-auto ms-auto">
             <div className="col">
-              <h5
-                className="mb-2 fw-bold"
-                style={{ fontFamily: "'Roboto Mono', sans-serif" }}
-              >
-                Tools
-                <img
-                  className="ms-3"
-                  src="https://cdn-icons-png.flaticon.com/512/817/817792.png"
-                  alt=""
-                  width="45"
-                  height="45"
-                />
-              </h5>
-              <ul
-                className="nav flex-column"
-                style={{ fontFamily: "'Roboto', sans-serif" }}
-              >
+              <h5 className="mb-2 fw-bold text-mono">Tools</h5>
+              <ul className="nav flex-column text-roboto">
                 <li className="nav-item mb-2">
                   <a
                     href="/utilisauras/"
@@ -125,10 +92,7 @@ export default function Footer() {
           </div>
         </footer>
         <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 mt-3 mb-1 border-top container-fluid ps-0">
-          <p
-            className="col-md-4 mb-0"
-            style={{ fontFamily: "'Roboto Slab', sans-serif" }}
-          >
+          <p className="col-md-4 mb-0 text-slab">
             &copy; {cdate} Utilisauras, Inc
           </p>
           <img

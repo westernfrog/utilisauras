@@ -10,6 +10,10 @@ export default function TextArea(props) {
   return (
     <div className="container my-5">
       <section className="container-fluid">
+        <h1 className="fw-bold text-poppins">Text Utility</h1>
+        <p className="text-dm">
+          Use this tool to display any text in an special, specified style.
+        </p>
         <div className="row">
           <div className="col-md-6 my-3">
             <h1>{props.title}</h1>
