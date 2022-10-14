@@ -59,9 +59,9 @@ export default function Footer() {
             </p>
           </div>
 
-          <div className="col-md-4 mt-3"></div>
+          <div className="col-md-4"></div>
 
-          <div className="col-md-2 mt-auto">
+          <div className="col-md-2 mt-auto ms-auto">
             <div className="col">
               <h5
                 className="mb-2 fw-bold"
