@@ -63,15 +63,15 @@ export default function Header() {
               </span>
             </button>
             <div className="collapse navbar-collapse" id="navbarNav">
-              <ul className="navbar-nav mx-auto text-roboto">
+              <ul className="navbar-nav mx-auto text-dm">
                 <li id="pill" className="nav-item me-2 shadow-sm rounded-pill">
-                  <a
+                  <Link
                     className="nav-link"
                     aria-current="true"
-                    href="/utilisauras"
+                    to="/utilisauras/pdf2word"
                   >
                     PDF TO WORD
-                  </a>
+                  </Link>
                 </li>
                 <li id="pill" className="nav-item me-2 shadow-sm rounded-pill">
                   <Link className="nav-link" to="/utilisauras/word2pdf">

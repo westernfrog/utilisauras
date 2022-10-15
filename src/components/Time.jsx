@@ -12,10 +12,12 @@ function Time() {
   }
 
   return (
-    <div className="container my-3">
-      <button className="btn">
-        <h1>{time}</h1>
-      </button>
+    <div className="container my-5">
+      <section className="container-fluid">
+        <h1 className="fw-bold text-poppins">Time Conversions</h1>
+        <h2 className="text-dm">{time}</h2>
+        <p className="text-dm"></p>
+      </section>
     </div>
   );
 }

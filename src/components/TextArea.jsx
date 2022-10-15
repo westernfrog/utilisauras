@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function TextArea(props) {
+export default function TextArea() {
   const [text, settext] = useState("");
 
   const handleOnChange = (event) => {
@@ -13,13 +13,17 @@ export default function TextArea(props) {
         <h1 className="fw-bold text-poppins">Text Utility</h1>
         <p className="text-dm">
           Use this tool to display any text in an special, specified style.
+          <br /> &rarr; &nbsp; Using this tool you can select your
+          <mark> desired font </mark>
+          and can
+          <mark> decorate your text. </mark>
         </p>
         <div className="row">
           <div className="col-md-6 my-3">
-            <h1>{props.title}</h1>
+            <h3 className="text-dm fw-bold">TextArea</h3>
             <div className="input-group shadow-sm">
               <textarea
-                className="form-control"
+                className="form-control text-dm"
                 aria-label="With textarea"
                 rows={10}
                 style={{ resize: "none" }}
@@ -27,11 +31,11 @@ export default function TextArea(props) {
                 value={text}
               ></textarea>
             </div>
-            <p className="my-3">{text.length} characters</p>
+            <p className="my-3 text-mono fw-bold">{text.length} characters</p>
           </div>
 
           <div className="col-md-6 my-3">
-            <h1>{props.preview}</h1>
+            <h3 className="text-dm fw-bold">Preview</h3>
             <div className="shadow-sm">
               <div
                 className="form-control"
