@@ -68,7 +68,7 @@ export default function Footer() {
                     to="/utilisauras/time"
                     className="nav-link p-0 fs-6 text-muted"
                   >
-                    Time Conversions
+                    Weather
                   </Link>
                 </li>
                 <li className="nav-item mb-2">

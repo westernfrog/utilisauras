@@ -79,8 +79,8 @@ export default function Header() {
                   </Link>
                 </li>
                 <li id="pill" className="nav-item me-2 shadow-sm rounded-pill">
-                  <Link className="nav-link" to="/utilisauras/time">
-                    TIME CONVERSIONS
+                  <Link className="nav-link" to="/utilisauras/clouds">
+                    WEATHER
                   </Link>
                 </li>
                 <li id="pill" className="nav-item me-2 shadow-sm rounded-pill">
