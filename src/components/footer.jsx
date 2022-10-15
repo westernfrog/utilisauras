@@ -46,7 +46,7 @@ export default function Footer() {
           <div className="col-md-2 mt-auto ms-auto">
             <div className="col">
               <h5 className="mb-2 fw-bold text-mono">Tools</h5>
-              <ul className="nav flex-column text-roboto">
+              <ul className="nav flex-column text-dm">
                 <li className="nav-item mb-2">
                   <a
                     href="/utilisauras/"

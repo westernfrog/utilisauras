@@ -46,6 +46,7 @@ export default function Header() {
               Tools
             </span>
             <button
+              id="btn"
               className="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
@@ -56,6 +57,7 @@ export default function Header() {
               style={{
                 boxShadow: "none",
                 border: "none",
+                transition: "all 3s ease-in-out;",
               }}
             >
               <span className="material-symbols-outlined text-dark">

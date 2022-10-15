@@ -9,7 +9,7 @@ export default function TextArea() {
 
   return (
     <div className="container my-5">
-      <section className="container-fluid">
+      <section>
         <h1 className="fw-bold text-poppins">Text Utility</h1>
         <p className="text-dm">
           Use this tool to display any text in an special, specified style.

@@ -11,7 +11,7 @@ function JSON() {
     <div>
       <Title title="JSON Formatters" desc="Prettify JSON data." />
       <div className="container">
-        <section className="container-fluid">
+        <section>
           <div className="row">
             <div className="col-md-6 my-3">
               <h3 className="text-dm fw-bold">Raw JSON format</h3>
