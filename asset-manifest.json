@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/utilisauras/static/js/main.f8fa7e39.js",
+    "main.js": "/utilisauras/static/js/main.6d5c3b2f.js",
     "index.html": "/utilisauras/index.html",
-    "main.f8fa7e39.js.map": "/utilisauras/static/js/main.f8fa7e39.js.map"
+    "main.6d5c3b2f.js.map": "/utilisauras/static/js/main.6d5c3b2f.js.map"
   },
   "entrypoints": [
-    "static/js/main.f8fa7e39.js"
+    "static/js/main.6d5c3b2f.js"
   ]
 }
